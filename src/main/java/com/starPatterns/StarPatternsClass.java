@@ -5,7 +5,38 @@ public class StarPatternsClass {
 
        // callToPrintStarPattern();//from 1 to 3
         //from 4 onwards
-        callToPattern4();
+        //callToPattern4();
+
+        //from 9 onwards
+        callToPattern9();
+    }
+
+    /**
+     * Pattern 9.
+     *
+     * 1111111
+     *  11111
+     *   111
+     *    1
+     *
+     *  */
+    private static void callToPattern9() {
+        System.out.println("Pattern 9.");
+        //its simple first outer loop is designated row counter
+        //whatever be the desired number of rows run it that many times
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < i; j++) { //this loop is to control spaces
+                System.out.print(" ");
+            }
+            for (int j = 5; j > i; j--) {
+                System.out.print("*");
+            }
+            for (int j = 4; j > i; j--) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
     }
 
     /**
@@ -76,6 +107,24 @@ public class StarPatternsClass {
      *   111
      *    11
      *     1
+     *
+     *    Pattern 6.
+     *    It is the combination of the pattern 4 & 5
+     *    hence not writing the solution of it
+     *
+     *    Pattern 7.
+     *        1
+     *       1 1
+     *      1 1 1
+     *     1 1 1 1
+     *    1 1 1 1 1
+     *
+     *    Pattern 8.
+     *
+     *       1
+     *      111
+     *     11111
+     *    1111111
      * */
     private static void callToPattern4() {
         //Pattern 4
@@ -101,5 +150,32 @@ public class StarPatternsClass {
             }
             System.out.println();
         }
+
+        //Pattern 7
+        System.out.println("Pattern 7.");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5-i ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        //Pattern 8.
+        System.out.println("Pattern 8.");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < i ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 5; j < ((2*i)+1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
+
+
+
 }
