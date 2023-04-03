@@ -28,10 +28,16 @@ public class StarPatternsClass {
             for (int j = 0; j < i; j++) { //this loop is to control spaces
                 System.out.print(" ");
             }
+            //the following loop is for printing:
+            // 1111
+            //  111
+            //   11
+            //    1
+            //there is a relation of no of * with i designated through j > i
             for (int j = 5; j > i; j--) {
                 System.out.print("*");
             }
-            for (int j = 4; j > i; j--) {
+            for (int j = 4; j > i; j--) {//as above similarly this loop will print the pattern for the adjacent side
                 System.out.print("*");
             }
 
