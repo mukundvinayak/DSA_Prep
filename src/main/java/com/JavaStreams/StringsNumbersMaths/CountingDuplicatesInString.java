@@ -19,7 +19,16 @@ public class CountingDuplicatesInString {
     private static void countDuplicateCharacters(String str) {
         Map<Character, Integer> result = new HashMap<>();
         for(char ch: str.toCharArray()){
-            result.compute(ch, (k, v) -> (v==null) ? 1 : ++v);//Attempts to compute a mapping for the specified key and its current mapped value
+            result
+                    .compute(ch, (k, v) -> (v==null) ? 1 : ++v);
+            //Attempts to compute a mapping for the specified key and its current mapped value
+            //compute(key, (key, value) -> value == null? 1 : ++value)
+            // merge() can be its replacement
+            // merge(key, newVal, (newVal, oldVal) -> new + old)
+            // merge is preferred over compute when there is the computation you need to apply
+            // is simple and binary in operation like adding and concatenating
+            // compute is preferred when the computation to be applied over the key
+            // was complex
 
         }
         System.out.println(result.toString());
