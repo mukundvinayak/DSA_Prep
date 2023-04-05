@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class CountingDuplicatesInString {
 
     public static void main(String[] args) {
-        String str = "A lazy fox jumps over the brown dog";
+        String str = "A quick brown fox jumps over the lazy dog";
         //countDuplicateCharacters(str);
         countDuplicateCharactersStreams(str);
     }
