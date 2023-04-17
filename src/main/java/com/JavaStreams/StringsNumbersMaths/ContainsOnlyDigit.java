@@ -3,10 +3,11 @@ package com.JavaStreams.StringsNumbersMaths;
 public class ContainsOnlyDigit {
 
     public static void main(String[] args) {
-
+        String str = "123";//"the quick brown fox jumps over the lazy dog";
+        System.out.println(containsOnlyDigitRegularExpression(str));
     }
     /**
-     the soluting to this problem is simple by using any of the following 3 approaches:
+     * the solution to this problem is simple by using any of the following 3 approaches:
     * 1. using regular expression checking for 0 to 9 present
      * 2. using String.matches()
      * 3. using Character.isDigit()
