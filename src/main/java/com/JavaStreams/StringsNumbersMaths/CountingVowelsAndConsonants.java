@@ -1,7 +1,6 @@
 package com.JavaStreams.StringsNumbersMaths;
 
 import javafx.util.Pair;
-import javafx.util.Pair.*;
 
 import java.util.Arrays;
 import java.util.HashSet;

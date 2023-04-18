@@ -9,7 +9,7 @@ public class ContainsOnlyDigit {
     /**
      * the solution to this problem is simple by using any of the following 3 approaches:
     * 1. using regular expression checking for 0 to 9 present
-     * 2. using String.matches()
+     * 1.1 using String.matches(regex)
      * 3. using Character.isDigit()
     */
 
