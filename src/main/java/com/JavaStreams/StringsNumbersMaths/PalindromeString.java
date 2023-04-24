@@ -34,7 +34,7 @@ public class PalindromeString {
     }
 
     private static boolean checkPalindromeStream(String str){
-        IntStream.range(0, str.length()/2)
+        return IntStream.range(0, str.length()/2)
                 .noneMatch(i-> str.charAt(i) != str.charAt(str.length()-1-i));
     }
 }
